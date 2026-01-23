@@ -1,2 +1,0 @@
-C:\git-repo\personal\FN.Testing_v.0.2\FN.Testing.DataLayer\obj\Debug\net5.0\FN.Testing.DataLayer.dll
-C:\git-repo\personal\FN.Testing_v.0.2\FN.Testing.DataLayer\obj\Debug\net5.0\FN.Testing.DataLayer.pdb
