@@ -1,0 +1,2 @@
+C:\git-repo\personal\FN.Testing_v.0.2\FN.Testing.WebApi.Configuration\obj\Debug\net5.0\FN.Testing.WebApi.Configuration.dll
+C:\git-repo\personal\FN.Testing_v.0.2\FN.Testing.WebApi.Configuration\obj\Debug\net5.0\FN.Testing.WebApi.Configuration.pdb

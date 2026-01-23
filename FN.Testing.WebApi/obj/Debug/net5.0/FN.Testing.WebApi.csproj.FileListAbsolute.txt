@@ -27,3 +27,5 @@ D:\MR\GIT\FN.Testing_v.0.2\FN.Testing.WebApi\bin\Debug\net5.0\FN.Testing.Entitie
 D:\MR\GIT\FN.Testing_v.0.2\FN.Testing.WebApi\bin\Debug\net5.0\FN.Testing.Functions.dll
 D:\MR\GIT\FN.Testing_v.0.2\FN.Testing.WebApi\bin\Debug\net5.0\FN.Testing.WebApi.Common.dll
 D:\MR\GIT\FN.Testing_v.0.2\FN.Testing.WebApi\bin\Debug\net5.0\FN.Testing.WebApi.Configuration.dll
+C:\git-repo\personal\FN.Testing_v.0.2\FN.Testing.WebApi\obj\Debug\net5.0\FN.Testing.WebApi.dll
+C:\git-repo\personal\FN.Testing_v.0.2\FN.Testing.WebApi\obj\Debug\net5.0\FN.Testing.WebApi.pdb

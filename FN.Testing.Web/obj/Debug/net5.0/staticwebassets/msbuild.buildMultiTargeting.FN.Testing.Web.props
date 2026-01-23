@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\FN.Testing.Web.props" />
+</Project>

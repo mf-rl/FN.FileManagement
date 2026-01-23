@@ -1,0 +1,145 @@
+{
+  "version": 2,
+  "dgSpecHash": "92J3gmYf6n4=",
+  "success": false,
+  "projectFilePath": "C:\\git-repo\\personal\\FN.Testing_v.0.2\\FN.Testing.Application\\FN.Testing.Application.csproj",
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'AutoMapper' from remote source 'https://gapinc.jfrog.io/artifactory/api/nuget/nuget/FindPackagesById()?id='AutoMapper'&semVerLevel=2.0.0'.\r\n  The parameter is incorrect.",
+      "projectPath": "C:\\git-repo\\personal\\FN.Testing_v.0.2\\FN.Testing.Application\\FN.Testing.Application.csproj",
+      "filePath": "C:\\git-repo\\personal\\FN.Testing_v.0.2\\FN.Testing.Application\\FN.Testing.Application.csproj",
+      "targetGraphs": []
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'Microsoft.Extensions.DependencyInjection.Abstractions' from remote source 'https://gapinc.jfrog.io/artifactory/api/nuget/nuget/FindPackagesById()?id='Microsoft.Extensions.DependencyInjection.Abstractions'&semVerLevel=2.0.0'.\r\n  The parameter is incorrect.",
+      "projectPath": "C:\\git-repo\\personal\\FN.Testing_v.0.2\\FN.Testing.Application\\FN.Testing.Application.csproj",
+      "filePath": "C:\\git-repo\\personal\\FN.Testing_v.0.2\\FN.Testing.Application\\FN.Testing.Application.csproj",
+      "targetGraphs": []
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'Microsoft.AspNetCore.StaticFiles' from remote source 'https://gapinc.jfrog.io/artifactory/api/nuget/nuget/FindPackagesById()?id='Microsoft.AspNetCore.StaticFiles'&semVerLevel=2.0.0'.\r\n  The parameter is incorrect.",
+      "projectPath": "C:\\git-repo\\personal\\FN.Testing_v.0.2\\FN.Testing.Application\\FN.Testing.Application.csproj",
+      "filePath": "C:\\git-repo\\personal\\FN.Testing_v.0.2\\FN.Testing.Application\\FN.Testing.Application.csproj",
+      "targetGraphs": []
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'Microsoft.AspNetCore.StaticFiles' from remote source 'https://gapinc.jfrog.io/artifactory/api/nuget/nuget/FindPackagesById()?id='Microsoft.AspNetCore.StaticFiles'&semVerLevel=2.0.0'.\r\n  The parameter is incorrect.",
+      "projectPath": "C:\\git-repo\\personal\\FN.Testing_v.0.2\\FN.Testing.Application\\FN.Testing.Application.csproj",
+      "filePath": "C:\\git-repo\\personal\\FN.Testing_v.0.2\\FN.Testing.Application\\FN.Testing.Application.csproj",
+      "targetGraphs": []
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'AutoMapper.Extensions.Microsoft.DependencyInjection' from remote source 'https://gapinc.jfrog.io/artifactory/api/nuget/nuget/FindPackagesById()?id='AutoMapper.Extensions.Microsoft.DependencyInjection'&semVerLevel=2.0.0'.\r\n  The parameter is incorrect.",
+      "projectPath": "C:\\git-repo\\personal\\FN.Testing_v.0.2\\FN.Testing.Application\\FN.Testing.Application.csproj",
+      "filePath": "C:\\git-repo\\personal\\FN.Testing_v.0.2\\FN.Testing.Application\\FN.Testing.Application.csproj",
+      "targetGraphs": []
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'AutoMapper.Extensions.Microsoft.DependencyInjection' from remote source 'https://gapinc.jfrog.io/artifactory/api/nuget/nuget/FindPackagesById()?id='AutoMapper.Extensions.Microsoft.DependencyInjection'&semVerLevel=2.0.0'.\r\n  The parameter is incorrect.",
+      "projectPath": "C:\\git-repo\\personal\\FN.Testing_v.0.2\\FN.Testing.Application\\FN.Testing.Application.csproj",
+      "filePath": "C:\\git-repo\\personal\\FN.Testing_v.0.2\\FN.Testing.Application\\FN.Testing.Application.csproj",
+      "targetGraphs": []
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'FluentValidation' from remote source 'https://gapinc.jfrog.io/artifactory/api/nuget/nuget/FindPackagesById()?id='FluentValidation'&semVerLevel=2.0.0'.\r\n  The parameter is incorrect.",
+      "projectPath": "C:\\git-repo\\personal\\FN.Testing_v.0.2\\FN.Testing.Application\\FN.Testing.Application.csproj",
+      "filePath": "C:\\git-repo\\personal\\FN.Testing_v.0.2\\FN.Testing.Application\\FN.Testing.Application.csproj",
+      "targetGraphs": []
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'FluentValidation' from remote source 'https://gapinc.jfrog.io/artifactory/api/nuget/nuget/FindPackagesById()?id='FluentValidation'&semVerLevel=2.0.0'.\r\n  The parameter is incorrect.",
+      "projectPath": "C:\\git-repo\\personal\\FN.Testing_v.0.2\\FN.Testing.Application\\FN.Testing.Application.csproj",
+      "filePath": "C:\\git-repo\\personal\\FN.Testing_v.0.2\\FN.Testing.Application\\FN.Testing.Application.csproj",
+      "targetGraphs": []
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'Microsoft.Extensions.Options' from remote source 'https://gapinc.jfrog.io/artifactory/api/nuget/nuget/FindPackagesById()?id='Microsoft.Extensions.Options'&semVerLevel=2.0.0'.\r\n  The parameter is incorrect.",
+      "projectPath": "C:\\git-repo\\personal\\FN.Testing_v.0.2\\FN.Testing.Application\\FN.Testing.Application.csproj",
+      "filePath": "C:\\git-repo\\personal\\FN.Testing_v.0.2\\FN.Testing.Application\\FN.Testing.Application.csproj",
+      "targetGraphs": []
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Unable to load the service index for source https://gapinc.jfrog.io/artifactory/api/nuget/v3/nuget-repo/index.json.\r\n  The parameter is incorrect.",
+      "projectPath": "C:\\git-repo\\personal\\FN.Testing_v.0.2\\FN.Testing.Application\\FN.Testing.Application.csproj",
+      "filePath": "C:\\git-repo\\personal\\FN.Testing_v.0.2\\FN.Testing.Application\\FN.Testing.Application.csproj",
+      "targetGraphs": []
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Unable to load the service index for source https://gapinc.jfrog.io/artifactory/api/nuget/v3/nuget-repo/index.json.\r\n  The parameter is incorrect.",
+      "projectPath": "C:\\git-repo\\personal\\FN.Testing_v.0.2\\FN.Testing.Application\\FN.Testing.Application.csproj",
+      "filePath": "C:\\git-repo\\personal\\FN.Testing_v.0.2\\FN.Testing.Application\\FN.Testing.Application.csproj",
+      "targetGraphs": []
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Unable to load the service index for source https://gapinc.jfrog.io/artifactory/api/nuget/v3/nuget-repo/index.json.\r\n  The parameter is incorrect.",
+      "projectPath": "C:\\git-repo\\personal\\FN.Testing_v.0.2\\FN.Testing.Application\\FN.Testing.Application.csproj",
+      "filePath": "C:\\git-repo\\personal\\FN.Testing_v.0.2\\FN.Testing.Application\\FN.Testing.Application.csproj",
+      "targetGraphs": []
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Unable to load the service index for source https://gapinc.jfrog.io/artifactory/api/nuget/v3/nuget-repo/index.json.\r\n  The parameter is incorrect.",
+      "projectPath": "C:\\git-repo\\personal\\FN.Testing_v.0.2\\FN.Testing.Application\\FN.Testing.Application.csproj",
+      "filePath": "C:\\git-repo\\personal\\FN.Testing_v.0.2\\FN.Testing.Application\\FN.Testing.Application.csproj",
+      "targetGraphs": []
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Unable to load the service index for source https://gapinc.jfrog.io/artifactory/api/nuget/v3/nuget-repo/index.json.\r\n  The parameter is incorrect.",
+      "projectPath": "C:\\git-repo\\personal\\FN.Testing_v.0.2\\FN.Testing.Application\\FN.Testing.Application.csproj",
+      "filePath": "C:\\git-repo\\personal\\FN.Testing_v.0.2\\FN.Testing.Application\\FN.Testing.Application.csproj",
+      "targetGraphs": []
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Unable to load the service index for source https://gapinc.jfrog.io/artifactory/api/nuget/v3/nuget-repo/index.json.\r\n  The parameter is incorrect.",
+      "projectPath": "C:\\git-repo\\personal\\FN.Testing_v.0.2\\FN.Testing.Application\\FN.Testing.Application.csproj",
+      "filePath": "C:\\git-repo\\personal\\FN.Testing_v.0.2\\FN.Testing.Application\\FN.Testing.Application.csproj",
+      "targetGraphs": []
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Unable to load the service index for source https://gapinc.jfrog.io/artifactory/api/nuget/v3/nuget-repo/index.json.\r\n  The parameter is incorrect.",
+      "projectPath": "C:\\git-repo\\personal\\FN.Testing_v.0.2\\FN.Testing.Application\\FN.Testing.Application.csproj",
+      "filePath": "C:\\git-repo\\personal\\FN.Testing_v.0.2\\FN.Testing.Application\\FN.Testing.Application.csproj",
+      "targetGraphs": []
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Unable to load the service index for source https://gapinc.jfrog.io/artifactory/api/nuget/v3/nuget-repo/index.json.\r\n  The parameter is incorrect.",
+      "projectPath": "C:\\git-repo\\personal\\FN.Testing_v.0.2\\FN.Testing.Application\\FN.Testing.Application.csproj",
+      "filePath": "C:\\git-repo\\personal\\FN.Testing_v.0.2\\FN.Testing.Application\\FN.Testing.Application.csproj",
+      "targetGraphs": []
+    }
+  ]
+}

@@ -1,0 +1,2 @@
+C:\git-repo\personal\FN.Testing_v.0.2\FN.Testing.Business.Contract\obj\Debug\net5.0\FN.Testing.Business.Contract.dll
+C:\git-repo\personal\FN.Testing_v.0.2\FN.Testing.Business.Contract\obj\Debug\net5.0\FN.Testing.Business.Contract.pdb

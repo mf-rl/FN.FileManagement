@@ -1,0 +1,97 @@
+{
+  "version": 2,
+  "dgSpecHash": "U9BFhshLqmI=",
+  "success": false,
+  "projectFilePath": "C:\\git-repo\\personal\\FN.Testing_v.0.2\\FN.Testing.Common\\FN.Testing.Common.csproj",
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'Microsoft.Extensions.Configuration.Abstractions' from remote source 'https://gapinc.jfrog.io/artifactory/api/nuget/nuget/FindPackagesById()?id='Microsoft.Extensions.Configuration.Abstractions'&semVerLevel=2.0.0'.\r\n  The parameter is incorrect.",
+      "projectPath": "C:\\git-repo\\personal\\FN.Testing_v.0.2\\FN.Testing.Common\\FN.Testing.Common.csproj",
+      "filePath": "C:\\git-repo\\personal\\FN.Testing_v.0.2\\FN.Testing.Common\\FN.Testing.Common.csproj",
+      "targetGraphs": []
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'Microsoft.Extensions.Configuration' from remote source 'https://gapinc.jfrog.io/artifactory/api/nuget/nuget/FindPackagesById()?id='Microsoft.Extensions.Configuration'&semVerLevel=2.0.0'.\r\n  The parameter is incorrect.",
+      "projectPath": "C:\\git-repo\\personal\\FN.Testing_v.0.2\\FN.Testing.Common\\FN.Testing.Common.csproj",
+      "filePath": "C:\\git-repo\\personal\\FN.Testing_v.0.2\\FN.Testing.Common\\FN.Testing.Common.csproj",
+      "targetGraphs": []
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'Microsoft.Extensions.Configuration' from remote source 'https://gapinc.jfrog.io/artifactory/api/nuget/nuget/FindPackagesById()?id='Microsoft.Extensions.Configuration'&semVerLevel=2.0.0'.\r\n  The parameter is incorrect.",
+      "projectPath": "C:\\git-repo\\personal\\FN.Testing_v.0.2\\FN.Testing.Common\\FN.Testing.Common.csproj",
+      "filePath": "C:\\git-repo\\personal\\FN.Testing_v.0.2\\FN.Testing.Common\\FN.Testing.Common.csproj",
+      "targetGraphs": []
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'FluentValidation' from remote source 'https://gapinc.jfrog.io/artifactory/api/nuget/nuget/FindPackagesById()?id='FluentValidation'&semVerLevel=2.0.0'.\r\n  The parameter is incorrect.",
+      "projectPath": "C:\\git-repo\\personal\\FN.Testing_v.0.2\\FN.Testing.Common\\FN.Testing.Common.csproj",
+      "filePath": "C:\\git-repo\\personal\\FN.Testing_v.0.2\\FN.Testing.Common\\FN.Testing.Common.csproj",
+      "targetGraphs": []
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'FluentValidation' from remote source 'https://gapinc.jfrog.io/artifactory/api/nuget/nuget/FindPackagesById()?id='FluentValidation'&semVerLevel=2.0.0'.\r\n  The parameter is incorrect.",
+      "projectPath": "C:\\git-repo\\personal\\FN.Testing_v.0.2\\FN.Testing.Common\\FN.Testing.Common.csproj",
+      "filePath": "C:\\git-repo\\personal\\FN.Testing_v.0.2\\FN.Testing.Common\\FN.Testing.Common.csproj",
+      "targetGraphs": []
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'Microsoft.Extensions.Configuration.EnvironmentVariables' from remote source 'https://gapinc.jfrog.io/artifactory/api/nuget/nuget/FindPackagesById()?id='Microsoft.Extensions.Configuration.EnvironmentVariables'&semVerLevel=2.0.0'.\r\n  The parameter is incorrect.",
+      "projectPath": "C:\\git-repo\\personal\\FN.Testing_v.0.2\\FN.Testing.Common\\FN.Testing.Common.csproj",
+      "filePath": "C:\\git-repo\\personal\\FN.Testing_v.0.2\\FN.Testing.Common\\FN.Testing.Common.csproj",
+      "targetGraphs": []
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'Microsoft.Extensions.Configuration.EnvironmentVariables' from remote source 'https://gapinc.jfrog.io/artifactory/api/nuget/nuget/FindPackagesById()?id='Microsoft.Extensions.Configuration.EnvironmentVariables'&semVerLevel=2.0.0'.\r\n  The parameter is incorrect.",
+      "projectPath": "C:\\git-repo\\personal\\FN.Testing_v.0.2\\FN.Testing.Common\\FN.Testing.Common.csproj",
+      "filePath": "C:\\git-repo\\personal\\FN.Testing_v.0.2\\FN.Testing.Common\\FN.Testing.Common.csproj",
+      "targetGraphs": []
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'Microsoft.Extensions.Configuration.FileExtensions' from remote source 'https://gapinc.jfrog.io/artifactory/api/nuget/nuget/FindPackagesById()?id='Microsoft.Extensions.Configuration.FileExtensions'&semVerLevel=2.0.0'.\r\n  The parameter is incorrect.",
+      "projectPath": "C:\\git-repo\\personal\\FN.Testing_v.0.2\\FN.Testing.Common\\FN.Testing.Common.csproj",
+      "filePath": "C:\\git-repo\\personal\\FN.Testing_v.0.2\\FN.Testing.Common\\FN.Testing.Common.csproj",
+      "targetGraphs": []
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'Microsoft.Extensions.Configuration.FileExtensions' from remote source 'https://gapinc.jfrog.io/artifactory/api/nuget/nuget/FindPackagesById()?id='Microsoft.Extensions.Configuration.FileExtensions'&semVerLevel=2.0.0'.\r\n  The parameter is incorrect.",
+      "projectPath": "C:\\git-repo\\personal\\FN.Testing_v.0.2\\FN.Testing.Common\\FN.Testing.Common.csproj",
+      "filePath": "C:\\git-repo\\personal\\FN.Testing_v.0.2\\FN.Testing.Common\\FN.Testing.Common.csproj",
+      "targetGraphs": []
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'Microsoft.Extensions.Configuration.Json' from remote source 'https://gapinc.jfrog.io/artifactory/api/nuget/nuget/FindPackagesById()?id='Microsoft.Extensions.Configuration.Json'&semVerLevel=2.0.0'.\r\n  The parameter is incorrect.",
+      "projectPath": "C:\\git-repo\\personal\\FN.Testing_v.0.2\\FN.Testing.Common\\FN.Testing.Common.csproj",
+      "filePath": "C:\\git-repo\\personal\\FN.Testing_v.0.2\\FN.Testing.Common\\FN.Testing.Common.csproj",
+      "targetGraphs": []
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'Microsoft.Extensions.Configuration.Json' from remote source 'https://gapinc.jfrog.io/artifactory/api/nuget/nuget/FindPackagesById()?id='Microsoft.Extensions.Configuration.Json'&semVerLevel=2.0.0'.\r\n  The parameter is incorrect.",
+      "projectPath": "C:\\git-repo\\personal\\FN.Testing_v.0.2\\FN.Testing.Common\\FN.Testing.Common.csproj",
+      "filePath": "C:\\git-repo\\personal\\FN.Testing_v.0.2\\FN.Testing.Common\\FN.Testing.Common.csproj",
+      "targetGraphs": []
+    }
+  ]
+}

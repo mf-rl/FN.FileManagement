@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "dgSpecHash": "/bwLt65Pbuc=",
+  "success": false,
+  "projectFilePath": "C:\\git-repo\\personal\\FN.Testing_v.0.2\\FN.Testing.Business.Contract\\FN.Testing.Business.Contract.csproj",
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'Microsoft.AspNetCore.Http.Features' from remote source 'https://gapinc.jfrog.io/artifactory/api/nuget/nuget/FindPackagesById()?id='Microsoft.AspNetCore.Http.Features'&semVerLevel=2.0.0'.\r\n  The parameter is incorrect.",
+      "projectPath": "C:\\git-repo\\personal\\FN.Testing_v.0.2\\FN.Testing.Business.Contract\\FN.Testing.Business.Contract.csproj",
+      "filePath": "C:\\git-repo\\personal\\FN.Testing_v.0.2\\FN.Testing.Business.Contract\\FN.Testing.Business.Contract.csproj",
+      "targetGraphs": []
+    }
+  ]
+}

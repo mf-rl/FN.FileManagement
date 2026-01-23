@@ -1,42 +1,42 @@
 {
   "format": 1,
   "restore": {
-    "D:\\MR\\GIT\\FN.Testing_v.0.2\\FN.Testing.DataLayer\\FN.Testing.DataLayer.csproj": {}
+    "C:\\git-repo\\personal\\FN.Testing_v.0.2\\FN.Testing.DataLayer\\FN.Testing.DataLayer.csproj": {}
   },
   "projects": {
-    "D:\\MR\\GIT\\FN.Testing_v.0.2\\FN.Test.Functions\\FN.Testing.Functions.csproj": {
+    "C:\\git-repo\\personal\\FN.Testing_v.0.2\\FN.Test.Functions\\FN.Testing.Functions.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\MR\\GIT\\FN.Testing_v.0.2\\FN.Test.Functions\\FN.Testing.Functions.csproj",
+        "projectUniqueName": "C:\\git-repo\\personal\\FN.Testing_v.0.2\\FN.Test.Functions\\FN.Testing.Functions.csproj",
         "projectName": "FN.Testing.Functions",
-        "projectPath": "D:\\MR\\GIT\\FN.Testing_v.0.2\\FN.Test.Functions\\FN.Testing.Functions.csproj",
-        "packagesPath": "C:\\Users\\soporte\\.nuget\\packages\\",
-        "outputPath": "D:\\MR\\GIT\\FN.Testing_v.0.2\\FN.Test.Functions\\obj\\",
+        "projectPath": "C:\\git-repo\\personal\\FN.Testing_v.0.2\\FN.Test.Functions\\FN.Testing.Functions.csproj",
+        "packagesPath": "C:\\Users\\mauri\\.nuget\\packages\\",
+        "outputPath": "C:\\git-repo\\personal\\FN.Testing_v.0.2\\FN.Test.Functions\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\soporte\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\mauri\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://gapinc.jfrog.io/artifactory/api/nuget/nuget": {},
+          "https://gapinc.jfrog.io/artifactory/api/nuget/v3/nuget-repo/index.json": {}
         },
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\MR\\GIT\\FN.Testing_v.0.2\\FN.Testing.Common\\FN.Testing.Common.csproj": {
-                "projectPath": "D:\\MR\\GIT\\FN.Testing_v.0.2\\FN.Testing.Common\\FN.Testing.Common.csproj"
+              "C:\\git-repo\\personal\\FN.Testing_v.0.2\\FN.Testing.Common\\FN.Testing.Common.csproj": {
+                "projectPath": "C:\\git-repo\\personal\\FN.Testing_v.0.2\\FN.Testing.Common\\FN.Testing.Common.csproj"
               }
             }
           }
@@ -45,7 +45,13 @@
           "warnAsError": [
             "NU1605"
           ]
-        }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.100"
       },
       "frameworks": {
         "net5.0": {
@@ -70,7 +76,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -79,36 +86,36 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\MR\\GIT\\FN.Testing_v.0.2\\FN.Testing.Common\\FN.Testing.Common.csproj": {
+    "C:\\git-repo\\personal\\FN.Testing_v.0.2\\FN.Testing.Common\\FN.Testing.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\MR\\GIT\\FN.Testing_v.0.2\\FN.Testing.Common\\FN.Testing.Common.csproj",
+        "projectUniqueName": "C:\\git-repo\\personal\\FN.Testing_v.0.2\\FN.Testing.Common\\FN.Testing.Common.csproj",
         "projectName": "FN.Testing.Common",
-        "projectPath": "D:\\MR\\GIT\\FN.Testing_v.0.2\\FN.Testing.Common\\FN.Testing.Common.csproj",
-        "packagesPath": "C:\\Users\\soporte\\.nuget\\packages\\",
-        "outputPath": "D:\\MR\\GIT\\FN.Testing_v.0.2\\FN.Testing.Common\\obj\\",
+        "projectPath": "C:\\git-repo\\personal\\FN.Testing_v.0.2\\FN.Testing.Common\\FN.Testing.Common.csproj",
+        "packagesPath": "C:\\Users\\mauri\\.nuget\\packages\\",
+        "outputPath": "C:\\git-repo\\personal\\FN.Testing_v.0.2\\FN.Testing.Common\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\soporte\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\mauri\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://gapinc.jfrog.io/artifactory/api/nuget/nuget": {},
+          "https://gapinc.jfrog.io/artifactory/api/nuget/v3/nuget-repo/index.json": {}
         },
         "frameworks": {
           "net5.0": {
@@ -120,7 +127,13 @@
           "warnAsError": [
             "NU1605"
           ]
-        }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.100"
       },
       "frameworks": {
         "net5.0": {
@@ -157,7 +170,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -166,36 +180,36 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\MR\\GIT\\FN.Testing_v.0.2\\FN.Testing.DataLayer.Contract\\FN.Testing.DataLayer.Contract.csproj": {
+    "C:\\git-repo\\personal\\FN.Testing_v.0.2\\FN.Testing.DataLayer.Contract\\FN.Testing.DataLayer.Contract.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\MR\\GIT\\FN.Testing_v.0.2\\FN.Testing.DataLayer.Contract\\FN.Testing.DataLayer.Contract.csproj",
+        "projectUniqueName": "C:\\git-repo\\personal\\FN.Testing_v.0.2\\FN.Testing.DataLayer.Contract\\FN.Testing.DataLayer.Contract.csproj",
         "projectName": "FN.Testing.DataLayer.Contract",
-        "projectPath": "D:\\MR\\GIT\\FN.Testing_v.0.2\\FN.Testing.DataLayer.Contract\\FN.Testing.DataLayer.Contract.csproj",
-        "packagesPath": "C:\\Users\\soporte\\.nuget\\packages\\",
-        "outputPath": "D:\\MR\\GIT\\FN.Testing_v.0.2\\FN.Testing.DataLayer.Contract\\obj\\",
+        "projectPath": "C:\\git-repo\\personal\\FN.Testing_v.0.2\\FN.Testing.DataLayer.Contract\\FN.Testing.DataLayer.Contract.csproj",
+        "packagesPath": "C:\\Users\\mauri\\.nuget\\packages\\",
+        "outputPath": "C:\\git-repo\\personal\\FN.Testing_v.0.2\\FN.Testing.DataLayer.Contract\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\soporte\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\mauri\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://gapinc.jfrog.io/artifactory/api/nuget/nuget": {},
+          "https://gapinc.jfrog.io/artifactory/api/nuget/v3/nuget-repo/index.json": {}
         },
         "frameworks": {
           "net5.0": {
@@ -207,7 +221,13 @@
           "warnAsError": [
             "NU1605"
           ]
-        }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.100"
       },
       "frameworks": {
         "net5.0": {
@@ -232,7 +252,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -241,49 +262,49 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\MR\\GIT\\FN.Testing_v.0.2\\FN.Testing.DataLayer\\FN.Testing.DataLayer.csproj": {
+    "C:\\git-repo\\personal\\FN.Testing_v.0.2\\FN.Testing.DataLayer\\FN.Testing.DataLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\MR\\GIT\\FN.Testing_v.0.2\\FN.Testing.DataLayer\\FN.Testing.DataLayer.csproj",
+        "projectUniqueName": "C:\\git-repo\\personal\\FN.Testing_v.0.2\\FN.Testing.DataLayer\\FN.Testing.DataLayer.csproj",
         "projectName": "FN.Testing.DataLayer",
-        "projectPath": "D:\\MR\\GIT\\FN.Testing_v.0.2\\FN.Testing.DataLayer\\FN.Testing.DataLayer.csproj",
-        "packagesPath": "C:\\Users\\soporte\\.nuget\\packages\\",
-        "outputPath": "D:\\MR\\GIT\\FN.Testing_v.0.2\\FN.Testing.DataLayer\\obj\\",
+        "projectPath": "C:\\git-repo\\personal\\FN.Testing_v.0.2\\FN.Testing.DataLayer\\FN.Testing.DataLayer.csproj",
+        "packagesPath": "C:\\Users\\mauri\\.nuget\\packages\\",
+        "outputPath": "C:\\git-repo\\personal\\FN.Testing_v.0.2\\FN.Testing.DataLayer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\soporte\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\mauri\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://gapinc.jfrog.io/artifactory/api/nuget/nuget": {},
+          "https://gapinc.jfrog.io/artifactory/api/nuget/v3/nuget-repo/index.json": {}
         },
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\MR\\GIT\\FN.Testing_v.0.2\\FN.Test.Functions\\FN.Testing.Functions.csproj": {
-                "projectPath": "D:\\MR\\GIT\\FN.Testing_v.0.2\\FN.Test.Functions\\FN.Testing.Functions.csproj"
+              "C:\\git-repo\\personal\\FN.Testing_v.0.2\\FN.Test.Functions\\FN.Testing.Functions.csproj": {
+                "projectPath": "C:\\git-repo\\personal\\FN.Testing_v.0.2\\FN.Test.Functions\\FN.Testing.Functions.csproj"
               },
-              "D:\\MR\\GIT\\FN.Testing_v.0.2\\FN.Testing.Common\\FN.Testing.Common.csproj": {
-                "projectPath": "D:\\MR\\GIT\\FN.Testing_v.0.2\\FN.Testing.Common\\FN.Testing.Common.csproj"
+              "C:\\git-repo\\personal\\FN.Testing_v.0.2\\FN.Testing.Common\\FN.Testing.Common.csproj": {
+                "projectPath": "C:\\git-repo\\personal\\FN.Testing_v.0.2\\FN.Testing.Common\\FN.Testing.Common.csproj"
               },
-              "D:\\MR\\GIT\\FN.Testing_v.0.2\\FN.Testing.DataLayer.Contract\\FN.Testing.DataLayer.Contract.csproj": {
-                "projectPath": "D:\\MR\\GIT\\FN.Testing_v.0.2\\FN.Testing.DataLayer.Contract\\FN.Testing.DataLayer.Contract.csproj"
+              "C:\\git-repo\\personal\\FN.Testing_v.0.2\\FN.Testing.DataLayer.Contract\\FN.Testing.DataLayer.Contract.csproj": {
+                "projectPath": "C:\\git-repo\\personal\\FN.Testing_v.0.2\\FN.Testing.DataLayer.Contract\\FN.Testing.DataLayer.Contract.csproj"
               }
             }
           }
@@ -292,7 +313,13 @@
           "warnAsError": [
             "NU1605"
           ]
-        }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.100"
       },
       "frameworks": {
         "net5.0": {
@@ -353,7 +380,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -362,7 +390,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }
