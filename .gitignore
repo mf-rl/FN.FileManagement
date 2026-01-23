@@ -4,6 +4,7 @@
 
 .vs/
 .vscode/
+**/[Dd]ebug/
 
 ## User-specific files
 *.user
