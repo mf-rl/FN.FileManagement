@@ -1,2 +1,0 @@
-C:\git-repo\personal\FN.Testing_v.0.2\FN.Test.Functions\obj\Debug\net5.0\FN.Testing.Functions.dll
-C:\git-repo\personal\FN.Testing_v.0.2\FN.Test.Functions\obj\Debug\net5.0\FN.Testing.Functions.pdb
