@@ -114,31 +114,15 @@ namespace FN.Testing.WinForm
             form.Add(new StringContent("0"), "Id");
             form.Add(new StringContent(Path.GetFileName(oImagePath.Text)), "FileName");
 
-
-            //byte[] bytes = File.ReadAllBytes(oImagePath.Text);
-            //string file = Convert.ToBase64String(bytes);
-            //Upload upload = new Upload
-            //{
-            //    File = file,
-            //    FileName = GetNewFilePath(string.Empty, false),
-            //    UploadDate = DateTime.Now
-            //};
-
             HttpClient client = new HttpClient();
             client.BaseAddress = new Uri(uploadUri);
-            //client.DefaultRequestHeaders.Accept.Clear();
-            //client.DefaultRequestHeaders.Accept.Add(
-            //    new MediaTypeWithQualityHeaderValue("application/json"));
-
-            //var response = await client.PostAsJsonAsync("uploads", upload);
             var response = await client.PostAsync("uploads", form);
 
 
             response.EnsureSuccessStatusCode();
             linkUploadedImage.Text = response.Content.ReadAsStringAsync().Result.Replace("\"", string.Empty);
             linkUploadedImage.Visible = true;
-            //MessageBox.Show(linkUploadedImage.Text);
-            imageSaved.Load(linkUploadedImage.Text);
+            //imageSaved.Load(linkUploadedImage.Text);
         }
 
         private void linkUploadedImage_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

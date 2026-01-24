@@ -67,7 +67,7 @@ namespace FN.Testing.DataLayer.Repositories
         public virtual IList<TEntity> GetAllPaged(int pageIndex, int pageSize, out int totalCount)
         {
             totalCount = DbSet.Count();
-            return DbSet.Skip(pageSize * pageIndex).Take(pageSize).ToList();
+            return System.Linq.Queryable.Skip(DbSet, pageSize * pageIndex).Take(pageSize).ToList();
         }
 
         public int Count()
@@ -141,12 +141,14 @@ namespace FN.Testing.DataLayer.Repositories
         #region Async Members
         public virtual async Task<IList<TEntity>> GetAllAsync()
         {
-            return await this.DbSet.ToListAsync();
+            return await ((IQueryable<TEntity>)DbSet).ToListAsync();
         }
 
         public virtual async Task<IList<TEntity>> FindAllAsync(Expression<Func<TEntity, bool>> match)
         {
-            return await this.DbSet.Where(match).ToListAsync();
+            return await ((IQueryable<TEntity>)DbSet)
+                .Where(match)
+                .ToListAsync();
         }
 
         public virtual async Task<TEntity> GetByIdAsync(object id, CancellationToken cancellationToken)
@@ -161,7 +163,7 @@ namespace FN.Testing.DataLayer.Repositories
 
         public async Task<int> CountAsync()
         {
-            return await this.DbSet.CountAsync();
+            return await ((IQueryable<TEntity>)DbSet).CountAsync();
         }
 
         public virtual async Task<object> InsertAsync(TEntity entity, CancellationToken cancellationToken, bool saveChanges = false)
