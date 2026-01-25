@@ -33,14 +33,14 @@ namespace FN.Business.Services
         public async Task DeleteUpload(int id, CancellationToken cancellationToken)
         {
             var file = await GetUpload(id, cancellationToken);
-            if (file != null && new Uploader().DeleteFile(string.Concat(file.FileName, file.Extension)))
+            if (file != null && Uploader.DeleteFile(string.Concat(file.FileName, file.Extension)))
             {
                 await _repository.DeleteUpload(id, cancellationToken);
             }            
         }
         public async Task<UploadedEntity> AddUpload(UploadEntity entity, CancellationToken cancellationToken)
         {
-            var uploadPath = new Uploader().UploadFile(entity.File);
+            var uploadPath = Uploader.UploadFile(entity.File);
             var inputEt = entity.ToUpload();
             inputEt.UploadDate = DateTime.Now;
             inputEt.Id = 0;
@@ -54,11 +54,11 @@ namespace FN.Business.Services
         }
         public async Task<byte[]> GetFile(string filePath, CancellationToken cancellationToken)
         {
-            return await new Uploader().DownloadFile(filePath);           
+            return await Uploader.DownloadFile(filePath);           
         }
         public string GetContentType(string filePath)
         {
-            return new Uploader().GetContentType(filePath);
+            return Uploader.GetContentType(filePath);
         }
     }
 }
