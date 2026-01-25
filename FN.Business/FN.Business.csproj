@@ -13,7 +13,6 @@
   <ItemGroup>
     <ProjectReference Include="..\FN.DataLayer\FN.DataLayer.csproj" />
     <ProjectReference Include="..\FN.Functions\FN.Functions.csproj" />
-    <ProjectReference Include="..\FN.Business.Contract\FN.Business.Contract.csproj" />
     <ProjectReference Include="..\FN.Common\FN.Common.csproj" />
     <ProjectReference Include="..\FN.Entities\FN.Entities.csproj" />
   </ItemGroup>

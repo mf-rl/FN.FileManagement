@@ -1,13 +1,14 @@
-﻿using FN.Entities;
-using FN.Application.Interfaces;
+﻿using FN.Application.Interfaces;
+using FN.Entities;
 using FN.WebApi.Common;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.StaticFiles;
+using System;
+using System.Collections.Generic;
+using System.Globalization;
+using System.IO;
 using System.Threading;
 using System.Threading.Tasks;
-using System.Collections.Generic;
-using System;
-using Microsoft.AspNetCore.StaticFiles;
-using System.IO;
 
 namespace FN.WebApi.Controllers
 {
@@ -45,7 +46,7 @@ namespace FN.WebApi.Controllers
         {
             await Task.Delay(1000);
             return new UploadedModel {
-                Id = id, FileName = fileName, Extension = fileExtension, UploadDate = DateTime.Parse(uploadDate)
+                Id = id, FileName = fileName, Extension = fileExtension, UploadDate = DateTime.Parse(uploadDate, CultureInfo.InvariantCulture)
             };
         }
         [HttpGet("download/{id:int}")]

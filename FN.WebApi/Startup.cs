@@ -21,11 +21,9 @@ namespace FN.WebApi
 {
     public class Startup
     {
-        readonly IWebHostEnvironment webHostEnvironment;
         public IConfigurationRoot Configuration { get; }
         public Startup(IWebHostEnvironment env)
         {
-            webHostEnvironment = env;
             var builder = new ConfigurationBuilder()
                 .SetBasePath(env.ContentRootPath)
                 .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
@@ -44,7 +42,7 @@ namespace FN.WebApi
             else 
                 services.AddDbContext<ConnectionDataContext>(opt => 
                     opt.UseSqlServer(Configuration.GetConnectionString("StuffDbConnectionString")));
-            services.AddDatabaseDeveloperPageExceptionFilter();
+            
             services.AddCors(options =>
             {
                 options.AddPolicy("CorsPolicy",
@@ -54,15 +52,10 @@ namespace FN.WebApi
                         .AllowAnyHeader()
                         );
             });
-            services.AddControllers()
-                //.AddNewtonsoftJson(opt =>
-                //{
-                //    opt.SerializerSettings.ContractResolver = new DefaultContractResolver();
-                //})
-                ;
+            services.AddControllers();
             services.AddMvc().AddJsonOptions(opt => opt.JsonSerializerOptions.PropertyNamingPolicy = JsonNamingPolicy.CamelCase);
             services.AddTransient<IClaimsTransformation, ClaimsTransformer>();
-            //services.AddAuthentication(IISServerDefaults.AuthenticationScheme);
+
             services
                 .AddSwaggerGen(c =>
                     {
@@ -74,25 +67,23 @@ namespace FN.WebApi
                 .AddDataLayer()
                 ;
         }
-        public void Configure(IApplicationBuilder app,
+        public static void Configure(IApplicationBuilder app,
             IWebHostEnvironment env,
             ILoggerFactory loggerFactory,
             IConfiguration configuration)
-        {
-            //Log.Logger = new LoggerConfiguration()
-                    //.WriteTo.RollingFile(pathFormat: "logs\\log-{Date}.log")
-                    //.CreateLogger();
+            {
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("./v1/swagger.json", "FN.WebApi v1"));
+                app.UseSwaggerUI(c =>
+                {
+                    c.SwaggerEndpoint("/swagger/v1/swagger.json", "FN.WebApi v1");
+                });
             }
             app.UseStatusCodePages();
             app.UseStaticFiles();
             app.UseCors("CorsPolicy");
-            //app.UseAuthentication();
-            //app.UseHttpsRedirection();
             app.UseRouting();
             app.UseAuthorization();
             app.UseEndpoints(endpoints =>

@@ -7,7 +7,7 @@ using FN.DataLayer.DataContext;
 
 namespace FN.WebApi
 {
-    public class Program
+    public static class Program
     {
         public static void Main(string[] args)
         {
@@ -15,7 +15,6 @@ namespace FN.WebApi
             using (var scope = host.Services.CreateScope())
             {
                 var services = scope.ServiceProvider;
-                var loggerFactory = services.GetRequiredService<ILoggerFactory>();
                 var context = services.GetRequiredService<ConnectionDataContext>();
                 ConnectionDataInitializer.Initialize(context);
             }
