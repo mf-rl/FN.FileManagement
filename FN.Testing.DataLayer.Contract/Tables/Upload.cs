@@ -2,7 +2,7 @@
 
 namespace FN.Testing.DataLayer.Contract.Tables
 {
-    public class Upload //: ITable
+    public class Upload
     {
         public int Id { get; set; }
         public string FileName { get; set; }
