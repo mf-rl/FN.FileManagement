@@ -1,6 +1,6 @@
-﻿using FN.Business.Contract.Abstractions;
-using FN.Business.Contract.Entities;
-using FN.DataLayer.Contract.Abstractions;
+﻿using FN.Business.Abstractions;
+using FN.Entities;
+using FN.DataLayer.Abstractions;
 using FN.Functions;
 using System;
 using System.Collections.Generic;

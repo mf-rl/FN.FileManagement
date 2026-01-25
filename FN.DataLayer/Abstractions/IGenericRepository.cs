@@ -5,7 +5,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Linq.Expressions;
 
-namespace FN.DataLayer.Contract.Abstractions
+namespace FN.DataLayer.Abstractions
 {
     public interface IGenericRepository<TEntity> where TEntity : class
     {

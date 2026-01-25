@@ -1,4 +1,4 @@
-﻿using FN.DataLayer.Contract.Abstractions;
+﻿using FN.DataLayer.Abstractions;
 using FN.DataLayer.Contract.Tables;
 using System.Collections.Generic;
 using System.Threading;

@@ -1,9 +1,9 @@
-﻿using FN.Application.Contract.Models;
+﻿using FN.Entities;
 using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace FN.Application.Contract.Services
+namespace FN.Application.Interfaces
 {
     public interface IUploadService
     {

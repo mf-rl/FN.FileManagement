@@ -1,5 +1,5 @@
-﻿using FN.Application.Contract.Models;
-using FN.Business.Contract.Abstractions;
+﻿using FN.Entities;
+using FN.Business.Abstractions;
 using FN.Common.Core;
 using System;
 

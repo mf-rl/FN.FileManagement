@@ -1,5 +1,5 @@
-﻿using FN.Application.Contract.Models;
-using FN.Application.Contract.Services;
+﻿using FN.Entities;
+using FN.Application.Interfaces;
 using FN.WebApi.Common;
 using Microsoft.AspNetCore.Mvc;
 using System.Threading;
@@ -78,7 +78,7 @@ namespace FN.WebApi.Controllers
                 fileName = submissionResult.FileName,
                 fileExtension = submissionResult.Extension,
                 uploadDate = submissionResult.UploadDate.ToString()
-            }, submissionResult); ;
+            }, submissionResult);
         }
         [HttpDelete]
         [Route("{id}")]

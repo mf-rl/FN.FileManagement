@@ -1,7 +1,8 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using FN.Entities.Abstractions;
+using Microsoft.AspNetCore.Http;
 using System;
 
-namespace FN.Business.Contract.Entities
+namespace FN.Entities
 {
     public class UploadEntity : IEntity
     {

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace FN.Application.Contract.Models
+namespace FN.Entities
 {
     public class UploadedModel
     {

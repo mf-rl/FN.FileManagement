@@ -1,13 +1,13 @@
 ﻿using FluentValidation;
-using FN.Application.Contract.Models;
-using FN.Application.Contract.Services;
-using FN.Business.Contract.Abstractions;
+using FN.Entities;
+using FN.Application.Interfaces;
 using FN.Common.Core;
 using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
 using FN.Business.Mappings;
 using FN.Common.Mappings;
+using FN.Business.Abstractions;
 
 namespace FN.Application.Services
 {

@@ -1,14 +1,13 @@
 ﻿using FluentValidation;
 using FluentValidation.Application.Validators;
-using FN.Application.Contract.Models;
-using FN.Application.Contract.Services;
+using FN.Entities;
+using FN.Application.Interfaces;
 using FN.Application.Services;
-using FN.Business.Contract.Abstractions;
+using FN.Business.Abstractions;
 using FN.Business.Services;
-using FN.DataLayer.Contract.Abstractions;
+using FN.DataLayer.Abstractions;
 using FN.DataLayer.Repositories;
 using Microsoft.Extensions.DependencyInjection;
-using System.Reflection;
 
 namespace FN.WebApi.Configuration
 {

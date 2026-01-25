@@ -1,4 +1,4 @@
-﻿namespace FN.Business.Contract.Entities
+﻿namespace FN.Entities.Abstractions
 {
     public interface IEntity
     {

@@ -5,6 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="12.1.1" />
     <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="5.0.4" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="5.0.4" />
     <PackageReference Include="Microsoft.AspNetCore.SpaServices" Version="3.1.13" />
@@ -24,10 +25,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\FN.Application.Contract\FN.Application.Contract.csproj" />
+    <ProjectReference Include="..\FN.Application\FN.Application.csproj" />
+    <ProjectReference Include="..\FN.Business\FN.Business.csproj" />
+    <ProjectReference Include="..\FN.DataLayer\FN.DataLayer.csproj" />
     <ProjectReference Include="..\FN.Entities\FN.Entities.csproj" />
-    <ProjectReference Include="..\FN.WebApi.Common\FN.WebApi.Common.csproj" />
-    <ProjectReference Include="..\FN.WebApi.Configuration\FN.WebApi.Configuration.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 
-namespace FN.Application.Contract.Models
+namespace FN.Entities
 {
     public class UploadModel
     {

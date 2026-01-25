@@ -1,4 +1,4 @@
-﻿using FN.DataLayer.Contract.Abstractions;
+﻿using FN.DataLayer.Abstractions;
 using FN.DataLayer.DataContext;
 
 namespace FN.DataLayer.Repositories

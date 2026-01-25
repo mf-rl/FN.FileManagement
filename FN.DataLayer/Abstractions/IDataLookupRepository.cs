@@ -1,4 +1,4 @@
-﻿namespace FN.DataLayer.Contract.Abstractions
+﻿namespace FN.DataLayer.Abstractions
 {
     public interface IDataLookupRepository<TEntity> : IGenericRepository<TEntity> where TEntity : class 
     {

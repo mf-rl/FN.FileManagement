@@ -8,8 +8,4 @@
     <PackageReference Include="Microsoft.AspNetCore.Http.Features" Version="5.0.4" />
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\FN.Application.Contract\FN.Application.Contract.csproj" />
-  </ItemGroup>
-
 </Project>

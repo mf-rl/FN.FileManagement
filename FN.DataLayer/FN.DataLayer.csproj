@@ -5,6 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="12.1.1" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="5.0.4" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.4" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Abstractions" Version="5.0.4" />
@@ -25,7 +26,6 @@
   <ItemGroup>
     <ProjectReference Include="..\FN.Functions\FN.Functions.csproj" />
     <ProjectReference Include="..\FN.Common\FN.Common.csproj" />
-    <ProjectReference Include="..\FN.DataLayer.Contract\FN.DataLayer.Contract.csproj" />
   </ItemGroup>
 
 </Project>

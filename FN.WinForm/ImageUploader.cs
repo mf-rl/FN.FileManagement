@@ -1,4 +1,4 @@
-﻿using FN.Application.Contract.Models;
+﻿using FN.Entities;
 using FN.Test.Functions;
 using SixLabors.ImageSharp;
 using SixLabors.ImageSharp.Processing;

@@ -5,13 +5,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="FluentValidation" Version="9.5.2" />
+    <PackageReference Include="FluentValidation" Version="12.1.1" />
     <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="2.2.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\FN.Application.Contract\FN.Application.Contract.csproj" />
-    <ProjectReference Include="..\FN.Business.Contract\FN.Business.Contract.csproj" />
+    <ProjectReference Include="..\FN.Business\FN.Business.csproj" />
     <ProjectReference Include="..\FN.Common\FN.Common.csproj" />
     <ProjectReference Include="..\FN.Entities\FN.Entities.csproj" />
   </ItemGroup>

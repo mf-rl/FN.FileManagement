@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using FN.Application.Contract.Models;
-using FN.Business.Contract.Entities;
+using FN.Entities;
 
 namespace FN.Business.Mappings
 {

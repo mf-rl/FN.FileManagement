@@ -1,5 +1,4 @@
-﻿using FN.Application.Contract.Models;
-using FN.Business.Contract.Entities;
+﻿using FN.Entities;
 using System;
 using System.Collections.Generic;
 using System.Text;

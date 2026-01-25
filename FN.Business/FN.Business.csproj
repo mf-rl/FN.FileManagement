@@ -5,15 +5,16 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="12.1.1" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
     <PackageReference Include="System.Drawing.Common" Version="10.0.2" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\FN.DataLayer\FN.DataLayer.csproj" />
     <ProjectReference Include="..\FN.Functions\FN.Functions.csproj" />
     <ProjectReference Include="..\FN.Business.Contract\FN.Business.Contract.csproj" />
     <ProjectReference Include="..\FN.Common\FN.Common.csproj" />
-    <ProjectReference Include="..\FN.DataLayer.Contract\FN.DataLayer.Contract.csproj" />
     <ProjectReference Include="..\FN.Entities\FN.Entities.csproj" />
   </ItemGroup>
 

@@ -1,9 +1,9 @@
-﻿using FN.Business.Contract.Entities;
+﻿using FN.Entities;
 using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace FN.Business.Contract.Abstractions
+namespace FN.Business.Abstractions
 {
     public interface IUploadDataService
     {

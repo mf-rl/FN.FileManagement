@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace FN.DataLayer.Contract.Abstractions
+namespace FN.DataLayer.Abstractions
 {
     public interface IUploadRepository : IGenericRepository<Upload>
     {

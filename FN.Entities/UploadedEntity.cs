@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace FN.Business.Contract.Entities
+namespace FN.Entities
 {
     public class UploadedEntity
     {

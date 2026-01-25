@@ -4,7 +4,7 @@ using System.Linq;
 using System.Linq.Expressions;
 using Microsoft.EntityFrameworkCore;
 using System.Threading.Tasks;
-using FN.DataLayer.Contract.Abstractions;
+using FN.DataLayer.Abstractions;
 using System.Threading;
 
 namespace FN.DataLayer.Repositories

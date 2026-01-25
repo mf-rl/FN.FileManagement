@@ -1,4 +1,4 @@
-﻿using FN.Business.Contract.Entities;
+﻿using FN.Entities;
 using FN.DataLayer.Contract.Tables;
 using Microsoft.AspNetCore.Http;
 using System;
