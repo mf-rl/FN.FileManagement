@@ -39,7 +39,7 @@ x86/
 *.config.user
 *.deps.json
 *.runtimeconfig.json
-appsettings.*.json
+# appsettings.*.json
 
 ## =========================
 ## NuGet

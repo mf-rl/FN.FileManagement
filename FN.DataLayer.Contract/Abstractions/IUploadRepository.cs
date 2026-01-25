@@ -9,7 +9,7 @@ namespace FN.DataLayer.Contract.Abstractions
     {
         Task<IList<Upload>> GetUploads();
         Task<Upload> GetUploadById(int id, CancellationToken cancellationToken);
-        Task<int> AddUpload(Upload inputEt, CancellationToken cancellationToken);
+        Task<int> AddUpload(Upload upload, CancellationToken cancellationToken);
         Task DeleteUpload(int id, CancellationToken cancellationToken);
     }
 }

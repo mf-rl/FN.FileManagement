@@ -9,12 +9,7 @@ namespace FN.DataLayer.Repositories
 {
     public class UploadRepository : GenericRepository<Upload>, IUploadRepository
     {
-        private ConnectionDataContext connectionDBContext;
-
-        public UploadRepository(ConnectionDataContext context) : base (context)
-        {
-            connectionDBContext = context;
-        }
+        public UploadRepository(ConnectionDataContext context) : base (context) { }
         public async Task<IList<Upload>> GetUploads()
         {
             return await GetAllAsync();

@@ -78,7 +78,7 @@ namespace FN.WebApi.Controllers
                 fileName = submissionResult.FileName,
                 fileExtension = submissionResult.Extension,
                 uploadDate = submissionResult.UploadDate.ToString()
-            }, result);;
+            }, submissionResult); ;
         }
         [HttpDelete]
         [Route("{id}")]

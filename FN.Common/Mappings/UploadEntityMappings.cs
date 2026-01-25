@@ -1,24 +1,39 @@
 ﻿using FN.Business.Contract.Entities;
 using FN.DataLayer.Contract.Tables;
+using Microsoft.AspNetCore.Http;
 using System;
-using System.Collections.Generic;
-using System.Text;
+using System.IO;
+using System.Threading;
+using System.Threading.Tasks;
 
 namespace FN.Common.Mappings
 {
     public static class UploadEntityMappings
     {
-        public static Upload ToUpload(this UploadEntity source)
+        public static async Task<Upload> ToNewUploadAsync(
+            this UploadEntity source,
+            CancellationToken cancellationToken = default)
         {
-            if (source == null)
+            if (source?.File == null)
                 return null;
+
             return new Upload
             {
                 Id = source.Id,
-                Extension = System.IO.Path.GetExtension(source.File?.FileName),
-                FileName = source.File?.FileName,
-                UploadDate = DateTimeOffset.UtcNow
+                FileName = Guid.NewGuid().ToString(),
+                Extension = Path.GetExtension(source.File.FileName),
+                UploadDate = DateTimeOffset.UtcNow,
+                FileContent = await ReadFileAsync(source.File, cancellationToken)
             };
+        }
+
+        private static async Task<byte[]> ReadFileAsync(
+            IFormFile content,
+            CancellationToken cancellationToken)
+        {
+            using var ms = new MemoryStream();
+            await content.CopyToAsync(ms, cancellationToken);
+            return ms.ToArray();
         }
     }
 }

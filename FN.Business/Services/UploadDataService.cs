@@ -40,12 +40,11 @@ namespace FN.Business.Services
         }
         public async Task<UploadedEntity> AddUpload(UploadEntity entity, CancellationToken cancellationToken)
         {
-            var uploadPath = Uploader.UploadFile(entity.File);
-            var inputEt = entity.ToUpload();
-            inputEt.UploadDate = DateTime.Now;
-            inputEt.Id = 0;
-            inputEt.FileName = Path.GetFileNameWithoutExtension(uploadPath);
-            inputEt.Extension = Path.GetExtension(uploadPath);
+            if (entity?.File == null || entity.File.Length == 0)
+                throw new InvalidOperationException("Uploaded file is empty.");
+
+            _ = Uploader.UploadFile(entity.File);
+            var inputEt = await entity.ToNewUploadAsync(cancellationToken);
             return new UploadedEntity
             {
                 Id = await _repository.AddUpload(inputEt, cancellationToken),

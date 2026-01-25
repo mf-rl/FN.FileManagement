@@ -1,4 +1,5 @@
-﻿using FN.Test.Functions;
+﻿using FN.Application.Contract.Models;
+using FN.Test.Functions;
 using SixLabors.ImageSharp;
 using SixLabors.ImageSharp.Processing;
 using System;
@@ -116,7 +117,7 @@ namespace FN.WinForm
             string uploadUri = System.Configuration.ConfigurationManager.AppSettings["WebServiceUri"];
 
             imageSaved.Image = null;
-            linkUploadedImage.Visible = false;
+            lblStatusUpdate.Visible = false;
 
             using var form = new MultipartFormDataContent();
             using var fileContent = new ByteArrayContent(await File.ReadAllBytesAsync(oImagePath.Text));
@@ -131,19 +132,19 @@ namespace FN.WinForm
 
             response.EnsureSuccessStatusCode();
 
-            linkUploadedImage.Text =
-                (await response.Content.ReadAsStringAsync()).Replace("\"", string.Empty);
+            var json = await response.Content.ReadAsStringAsync();
 
-            linkUploadedImage.Visible = true;
-        }
+            var uploaded =
+                System.Text.Json.JsonSerializer.Deserialize<UploadedModel>(
+                    json,
+                    new System.Text.Json.JsonSerializerOptions
+                    {
+                        PropertyNameCaseInsensitive = true
+                    });
 
-        private void linkUploadedImage_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            Process.Start(new ProcessStartInfo
-            {
-                FileName = linkUploadedImage.Text,
-                UseShellExecute = true
-            });
+            lblStatusUpdate.Text = $"{uploaded.FileName}{uploaded.Extension}";
+
+            lblStatusUpdate.Visible = true;
         }
     }
 }
