@@ -153,7 +153,7 @@ namespace FN.DataLayer.Repositories
 
         public virtual async Task<TEntity> GetByIdAsync(object id, CancellationToken cancellationToken)
         {
-            return await this.DbSet.FindAsync(id);
+            return await this.DbSet.FindAsync(id, cancellationToken);
         }
 
         public virtual async Task<TEntity> FindAsync(Expression<Func<TEntity, bool>> match)
@@ -171,17 +171,22 @@ namespace FN.DataLayer.Repositories
             var rtn = await this.DbSet.AddAsync(entity);
             if (saveChanges)
             {
-                await Context.SaveChangesAsync();
+                await Context.SaveChangesAsync(cancellationToken);
             }
             return rtn;
         }
 
         public virtual async Task DeleteAsync(object id, CancellationToken cancellationToken, bool saveChanges = false)
         {
-            this.DbSet.Remove(GetById(id, cancellationToken));
+            var entity = await GetByIdAsync(id, cancellationToken);
+            if (entity == null)
+            {
+                return;
+            }
+            this.DbSet.Remove(entity);
             if (saveChanges)
             {
-                await Context.SaveChangesAsync();
+                await Context.SaveChangesAsync(cancellationToken);
             }
         }
 

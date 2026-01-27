@@ -1,5 +1,4 @@
-﻿using FN.Test.Functions;
-using FN.Common.Common;
+﻿using FN.Common.Common;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.StaticFiles;
 using System;
@@ -90,12 +89,11 @@ namespace FN.Functions
                         // Replace original
                         File.Delete(targetPath);
 
-                        string resizedPath =
-                            new Generic().SaveImageToFile(image, uploadDir);
+                        string resizedPath = Generic.SaveImageToFile(image, uploadDir);
 
                         // Enforce max file size
                         targetPath =
-                            new ImageResizer().ScaleImage(
+                            ImageResizer.ScaleImage(
                                 resizedPath,
                                 allowedSize,
                                 deleteSrcFile: true

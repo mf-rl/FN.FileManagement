@@ -1,5 +1,5 @@
 ﻿using FluentValidation;
-using FluentValidation.Application.Validators;
+using FN.Application.Validators;
 using FN.Entities;
 using FN.Application.Interfaces;
 using FN.Application.Services;

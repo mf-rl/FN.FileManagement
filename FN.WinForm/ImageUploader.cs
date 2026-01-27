@@ -1,9 +1,8 @@
 ﻿using FN.Entities;
-using FN.Test.Functions;
+using FN.Functions;
 using SixLabors.ImageSharp;
 using SixLabors.ImageSharp.Processing;
 using System;
-using System.Diagnostics;
 using System.IO;
 using System.Net.Http;
 using System.Net.Http.Headers;
@@ -71,7 +70,7 @@ namespace FN.WinForm
             sb.AppendLine($"Image width : {image.Width}");
             sb.AppendLine($"Image height : {image.Height}");
             sb.AppendLine($"Image Pixel depth : {image.PixelType.BitsPerPixel}");
-            sb.AppendLine($"Image size : {new Generic().ConvertSize(imagePath)}");
+            sb.AppendLine($"Image size : { Generic.ConvertSize(imagePath)}");
 
             propertiesPreview.Text = sb.ToString();
         }
@@ -92,10 +91,10 @@ namespace FN.WinForm
             image.Mutate(x => x.Resize(newWidth, newHeight));
 
             string tempPath = Path.GetTempPath();
-            string tempFile = new Generic().SaveImageToFile(image, tempPath);
+            string tempFile = Generic.SaveImageToFile(image, tempPath);
 
             string compressedPath =
-                new ImageResizer().ScaleImage(
+                ImageResizer.ScaleImage(
                     tempFile,
                     (int)((ComboBoxItem)cmbSizeMax.SelectedItem).Value,
                     deleteSrcFile: true

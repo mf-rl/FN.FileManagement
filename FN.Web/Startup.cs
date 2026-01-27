@@ -15,10 +15,19 @@ namespace FN.Web
 
         public IConfiguration Configuration { get; }
 
+        [System.Diagnostics.CodeAnalysis.SuppressMessage(
+        "Major Code Smell",
+        "S2325:Methods should not be static",
+        Justification = "ASP.NET Core Startup methods must remain instance methods for extensibility")]
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddRazorPages();
         }
+
+        [System.Diagnostics.CodeAnalysis.SuppressMessage(
+        "Major Code Smell",
+        "S2325:Methods should not be static",
+        Justification = "ASP.NET Core Startup methods must remain instance methods for extensibility")]
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             if (env.IsDevelopment())

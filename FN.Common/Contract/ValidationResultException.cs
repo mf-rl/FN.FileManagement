@@ -3,7 +3,6 @@ using System;
 
 namespace FN.Common.Contract
 {
-    [Serializable]
     public class ValidationResultException : Exception
     {
         public ValidationResultException(ValidationResult validationResult)

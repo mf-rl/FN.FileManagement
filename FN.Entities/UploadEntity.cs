@@ -1,6 +1,5 @@
 ﻿using FN.Entities.Abstractions;
 using Microsoft.AspNetCore.Http;
-using System;
 
 namespace FN.Entities
 {

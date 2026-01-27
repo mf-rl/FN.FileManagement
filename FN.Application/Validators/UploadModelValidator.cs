@@ -2,15 +2,16 @@
 using FN.Business.Abstractions;
 using FN.Common.Core;
 using System;
+using FluentValidation;
 
-namespace FluentValidation.Application.Validators
+namespace FN.Application.Validators
 {
     public class UploadModelValidator : AbstractValidator<UploadModel>
     {
         public UploadModelValidator(IUploadDataService uploadDataService)
         {
-            if (uploadDataService == null)
-                throw new ArgumentNullException(nameof(uploadDataService));
+            ArgumentNullException.ThrowIfNull(uploadDataService);
+
             RuleFor(x => x.File).NotNullConfigured();
         }
     }

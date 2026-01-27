@@ -7,7 +7,7 @@ using System.Linq.Expressions;
 
 namespace FN.DataLayer.Abstractions
 {
-    public interface IGenericRepository<TEntity> where TEntity : class
+    public interface IGenericRepository<TEntity> : IDisposable
     {
         IList<TEntity> GetAll();
         IList<TEntity> GetAllMatched(Expression<Func<TEntity, bool>> match);
@@ -35,6 +35,5 @@ namespace FN.DataLayer.Abstractions
         Task UpdateAsync(TEntity entity, bool saveChanges = false);
         Task<TEntity> UpdateAsync(TEntity entity, object key, bool saveChanges = false);
         Task CommitAsync();
-        void Dispose();
     }
 }

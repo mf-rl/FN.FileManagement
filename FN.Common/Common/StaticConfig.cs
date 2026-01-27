@@ -1,13 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Reflection;
+﻿using System.IO;
 using System.Xml;
 using Microsoft.Extensions.Configuration;
 
 namespace FN.Common.Common
 {
-    public class StaticConfigs
+    public static class StaticConfigs
     {
         //Read from appsettings.json.
         public static string GetConfig(string keyName)
@@ -32,7 +29,7 @@ namespace FN.Common.Common
         {
             var rtnString = string.Empty;
             var configPath = Path.Combine(Directory.GetCurrentDirectory(), "Web.config");
-            XmlDocument x = new XmlDocument();
+            XmlDocument x = new();
             x.Load(configPath);
             XmlNodeList nodeList = x.SelectNodes("//appSettings/add");
             foreach (XmlNode node in nodeList)

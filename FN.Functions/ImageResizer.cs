@@ -5,13 +5,13 @@ using SixLabors.ImageSharp.Formats;
 using SixLabors.ImageSharp.Formats.Jpeg;
 using SixLabors.ImageSharp.Processing;
 
-namespace FN.Test.Functions
+namespace FN.Functions
 {
     public class ImageResizer
     {
-        private int allowedFileSizeInByte;
-        private string sourcePath;
-        private string destinationPath;
+        private readonly int allowedFileSizeInByte;
+        private readonly string sourcePath;
+        private readonly string destinationPath;
 
         public ImageResizer(int allowedSize, string sourcePath, string destinationPath)
         {
@@ -20,9 +20,7 @@ namespace FN.Test.Functions
             this.destinationPath = destinationPath;
         }
 
-        public ImageResizer()
-        {
-        }
+        public ImageResizer() { }
 
         public void ScaleImage()
         {
@@ -52,12 +50,32 @@ namespace FN.Test.Functions
             SaveImageToFile(ms);
         }
 
+        public static string ScaleImage(string sourcePath, int allowedSize, bool deleteSrcFile = false)
+        {
+            string destPath = Generic.GetNewFilePath(Path.GetDirectoryName(sourcePath));
+
+            ImageResizer resizer = new ImageResizer(allowedSize, sourcePath, destPath);
+            resizer.ScaleImage();
+
+            if (deleteSrcFile)
+                File.Delete(sourcePath);
+
+            return destPath;
+        }
+        public static Image ScaleImage(Image image, double scale)
+        {
+            int newWidth = Math.Max(1, (int)(image.Width * scale));
+            int newHeight = Math.Max(1, (int)(image.Height * scale));
+
+            return image.Clone(x => x.Resize(newWidth, newHeight));
+        }
+
         private void SaveImageToFile(MemoryStream ms)
         {
             File.WriteAllBytes(destinationPath, ms.ToArray());
         }
 
-        private void SaveTemporary(Image image, MemoryStream ms, IImageFormat format, int quality)
+        private static void SaveTemporary(Image image, MemoryStream ms, IImageFormat format, int quality)
         {
             if (format.Name.Equals("JPEG", StringComparison.OrdinalIgnoreCase))
             {
@@ -69,30 +87,9 @@ namespace FN.Test.Functions
             }
         }
 
-        public Image ScaleImage(Image image, double scale)
-        {
-            int newWidth = Math.Max(1, (int)(image.Width * scale));
-            int newHeight = Math.Max(1, (int)(image.Height * scale));
-
-            return image.Clone(x => x.Resize(newWidth, newHeight));
-        }
-
-        public Image ResizeImage(Image srcImage, int newWidth, int newHeight)
+        public static Image ResizeImage(Image srcImage, int newWidth, int newHeight)
         {
             return srcImage.Clone(x => x.Resize(newWidth, newHeight));
-        }
-
-        public string ScaleImage(string sourcePath, int allowedSize, bool deleteSrcFile = false)
-        {
-            string destPath = new Generic().GetNewFilePath(Path.GetDirectoryName(sourcePath));
-
-            ImageResizer resizer = new ImageResizer(allowedSize, sourcePath, destPath);
-            resizer.ScaleImage();
-
-            if (deleteSrcFile)
-                File.Delete(sourcePath);
-
-            return destPath;
         }
     }
 }

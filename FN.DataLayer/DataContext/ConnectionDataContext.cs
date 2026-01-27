@@ -9,9 +9,9 @@ namespace FN.DataLayer.DataContext
         {            
         }
         public DbSet<Upload> Uploads { get; set; }
-        protected override void OnModelCreating(ModelBuilder builder)
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            builder.Entity<Upload>().ToTable("Upload");
+            modelBuilder.Entity<Upload>().ToTable("Upload");
         }
     }
 }

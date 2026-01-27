@@ -2,6 +2,7 @@
 using FN.Common.WebCore;
 using Microsoft.AspNetCore.Mvc;
 using System;
+using System.Collections.Generic;
 using System.Net.Http;
 using System.Threading.Tasks;
 
@@ -16,7 +17,7 @@ namespace FN.WebApi.Common
             try
             {
                 var response = await serviceRequest();
-                if (response == null)
+                if (EqualityComparer<T>.Default.Equals(response, default))
                 {
                     var message = $"Service response is null, but it should be returned an object with type {typeof(T)}.";
                     if (HttpContext.Request.Method == HttpMethod.Get.Method)
@@ -58,7 +59,7 @@ namespace FN.WebApi.Common
                         return Task.FromResult<IActionResult>(BadRequest(responseModel));
                     }
                 case ArgumentNullException e:
-                    return Task.FromResult<IActionResult>(BadRequest(ex.Message));
+                    return Task.FromResult<IActionResult>(BadRequest(e.Message));
                 default:
                     throw ex;
             }

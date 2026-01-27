@@ -14,7 +14,6 @@ using Microsoft.AspNetCore.Authentication;
 using System.Security.Claims;
 using System.Threading.Tasks;
 using System;
-using Microsoft.AspNetCore.Server.IIS;
 using System.Linq;
 
 namespace FN.WebApi

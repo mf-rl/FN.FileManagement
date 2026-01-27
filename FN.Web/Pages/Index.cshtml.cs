@@ -1,10 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.RazorPages;
+﻿using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace FN.Web.Pages
 {
@@ -19,7 +14,7 @@ namespace FN.Web.Pages
 
         public void OnGet()
         {
-
+            _logger.LogInformation("Index page accessed");
         }
     }
 }
