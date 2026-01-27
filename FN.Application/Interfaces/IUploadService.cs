@@ -11,7 +11,7 @@ namespace FN.Application.Interfaces
         Task<IEnumerable<UploadedModel>> GetUploads(CancellationToken cancellationToken);
         Task<UploadedModel> PostUpload(UploadModel uploadModel, CancellationToken cancellationToken);
         Task DeleteUpload(int id, CancellationToken cancellationToken);
-        Task<byte[]> GetFile(string filePath, CancellationToken cancellationToken);
+        Task<byte[]> GetFile(int id, CancellationToken cancellationToken);
         string GetContentType(string filePath);
     }
 }

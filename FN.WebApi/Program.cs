@@ -1,9 +1,11 @@
+using FN.DataLayer.DataContext;
+using FN.Entities;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
-using FN.DataLayer.DataContext;
+using Microsoft.Extensions.Options;
 
 namespace FN.WebApi
 {
@@ -16,7 +18,8 @@ namespace FN.WebApi
             {
                 var services = scope.ServiceProvider;
                 var context = services.GetRequiredService<ConnectionDataContext>();
-                ConnectionDataInitializer.Initialize(context);
+                var customConfig = services.GetRequiredService<IOptions<CustomConfig>>().Value;
+                ConnectionDataInitializer.Initialize(context, customConfig.UseInMemoryDatabase);
             }
             host.Run();
         }

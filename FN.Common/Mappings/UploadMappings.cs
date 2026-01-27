@@ -25,5 +25,18 @@ namespace FN.Common.Mappings
         {
             return source?.Select(e => e.ToUploadedEntity());
         }
+        public static DownloadEntity ToDownloadEntity(this Upload source)
+        {
+            if (source == null)
+                return null;
+            return new DownloadEntity
+            {
+                Id = source.Id,
+                FileName = source.FileName,
+                Extension = source.Extension,
+                UploadDate = source.UploadDate,
+                FileContent = source.FileContent
+            };
+        }
     }
 }

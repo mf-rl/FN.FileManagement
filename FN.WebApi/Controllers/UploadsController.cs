@@ -57,8 +57,7 @@ namespace FN.WebApi.Controllers
             if (uploadData != null)
             {
                 string contentType = _uploadService.GetContentType(string.Concat(uploadData.FileName, uploadData.Extension));
-                var bytes = await _uploadService.GetFile(
-                    string.Concat(uploadData.FileName, uploadData.Extension), cancellationToken);
+                var bytes = await _uploadService.GetFile(id, cancellationToken);
                 return File(bytes, contentType, string.Concat(uploadData.FileName, uploadData.Extension));
             }
             else return NotFound();

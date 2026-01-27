@@ -8,6 +8,5 @@ namespace FN.Entities
         public string FileName { get; set; }
         public DateTimeOffset UploadDate { get; set; }
         public string Extension { get; set; }
-        public byte[] FileContent { get; set; }
     }
 }

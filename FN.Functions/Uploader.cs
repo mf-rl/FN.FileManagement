@@ -9,6 +9,12 @@ using SixLabors.ImageSharp.Processing;
 
 namespace FN.Functions
 {
+    public sealed class UploadProperties
+    {
+        public double WidthPercent { get; set; } = 1;
+        public double HeightPercent { get; set; } = 1;
+        public int AllowedSize { get; set; } = 1024 * 1024;
+    }
     public static class Uploader
     {
         public static async Task<byte[]> DownloadFile(string fileName)
@@ -45,21 +51,19 @@ namespace FN.Functions
                 return false;
             }            
         }
-        public static string UploadFile(IFormFile file)
+        public static string UploadFile(IFormFile file, string uploadDir, UploadProperties properties = null)
         {
-            double widthPercent =
-                Convert.ToDouble(StaticConfigs.GetConfig("WidthPercent")) / 100;
-
-            double heightPercent =
-                Convert.ToDouble(StaticConfigs.GetConfig("HeightPercent")) / 100;
-
-            int allowedSize =
-                Convert.ToInt32(StaticConfigs.GetConfig("AllowedSize"));
+            if (properties != null)
+            {
+                properties = new UploadProperties();            
+            }
+            double widthPercent = properties.WidthPercent;
+            double heightPercent = properties.HeightPercent;
+            int allowedSize = properties.AllowedSize;
 
             string fileExtension =
                 Path.GetExtension(file.FileName).ToLowerInvariant();
 
-            string uploadDir = StaticConfigs.GetConfig("UploadPath");
             Directory.CreateDirectory(uploadDir);
 
             string targetPath = Path.Combine(

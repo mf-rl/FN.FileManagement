@@ -2,10 +2,13 @@
 {
     public class CustomConfig
     {
+        public bool UploadToDatabase { get; set; }
+        public bool UploadToFileSystem { get; set; }
         public string UploadPath { get; set; }
-        public string WidthPercent { get; set; }
-        public string HeightPercent { get; set; }
-        public string AllowedSize { get; set; }
+        public double WidthPercent { get; set; }
+        public double HeightPercent { get; set; }
+        public int AllowedSize { get; set; }
         public string UploadUri { get; set; }
+        public bool UseInMemoryDatabase { get; set; }
     }
 }

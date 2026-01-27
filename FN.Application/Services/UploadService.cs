@@ -43,9 +43,9 @@ namespace FN.Application.Services
         {
             await _uploadDataService.DeleteUpload(id, cancellationToken);
         }
-        public async Task<byte[]> GetFile(string filePath, CancellationToken cancellationToken)
+        public async Task<byte[]> GetFile(int id, CancellationToken cancellationToken)
         {
-            return await _uploadDataService.GetFile(filePath, cancellationToken);
+            return await _uploadDataService.GetFile(id, cancellationToken);
         }
         public string GetContentType(string filePath)
         {

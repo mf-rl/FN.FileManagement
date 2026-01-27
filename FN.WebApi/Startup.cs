@@ -36,6 +36,7 @@ namespace FN.WebApi
             services.AddSingleton<IConfiguration>(Configuration);
             services.AddOptions();
             services.Configure<CustomConfig>(Configuration.GetSection("CustomConfig"));
+
             if (Configuration["AppConfig:UseInMemoryDatabase"] == "true")
                 services.AddDbContext<ConnectionDataContext>(opt => opt.UseInMemoryDatabase("InMemoryDatabase"));
             else 

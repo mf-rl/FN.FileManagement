@@ -11,7 +11,7 @@ namespace FN.Common.Mappings
     public static class UploadEntityMappings
     {
         public static async Task<Upload> ToNewUploadAsync(
-            this UploadEntity source,
+            this UploadEntity source, 
             CancellationToken cancellationToken = default)
         {
             if (source?.File == null)

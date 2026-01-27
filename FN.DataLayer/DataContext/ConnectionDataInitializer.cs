@@ -4,9 +4,9 @@ namespace FN.DataLayer.DataContext
 {
     public static class ConnectionDataInitializer
     {
-        public static void Initialize(ConnectionDataContext context)
+        public static void Initialize(ConnectionDataContext context, bool useInMemoryDatabase)
         {
-            if (StaticConfigs.GetConfig("UseInMemoryDatabase") != "true")
+            if (!useInMemoryDatabase)
             {
                 context.Database.EnsureCreated();
             }            
